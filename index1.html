@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Cinta Virginnia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Angel Cinta Virginnia</h1>
+      <p>Dan aku <strong>nggak menyesal</strong> memilih <em>Sistem Informasi</em> — gabungan <a href="#">teknologi</a> dan <a href="#">bisnis</a>.</p>
+      <nav>
+        <a href="#foto">Foto</a>
+        <a href="#alasan">Alasan</a>
+        <a href="#materi">Materi</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="foto" class="card">
+      <h2>Belajar Konsisten</h2>
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900" alt="Coding" class="foto-koding">
+      <p>Di SI, aku membangun <em>web apps</em>, memahami kebutuhan pengguna, dan membuat solusi yang bermanfaat.<br>
+      Rumus semangat: <strong>Belajar<sub>rutin</sub> × Proyek<sub>nyata</sub></strong>.</p>
+    </section>
+
+    <section id="alasan" class="card">
+      <h2>Kenapa Aku Memilih SI?</h2>
+      <p>Karena di sini aku bisa memadukan logika pemrograman dengan analisis bisnis — memahami masalah dan menciptakan solusi teknologi yang berdampak nyata.</p>
+      <p>karna koding itu <strong> alat </strong>untuk memecahkan masalah. Di sistem informasi aku belajar:</p>
+        <li><strong>Teknis:</strong> HTML, CSS dasar, Javascript dasar.</li>
+        <li><strong>Analitis:</strong> memahami proses bisnis & data.</li>
+        <li><strong>Komunikasi:</strong>menyampaikan solusi ke pengguna</li>
+    </section>
+
+    <section id="materi" class="card">
+      <h2>Contoh penerapan materi dasar</h2>
+      <div class="materi-grid">
+        <div class="materi-item">🌐 Heading & Paragraf</div>
+        <div class="materi-item">🌐 Penekanan teks & code</div>
+        <div class="materi-item">🌐 Small, Sup & Sub</div>
+        <div class="materi-item">🌐 Gambar,Tautan & Garis</div>
+      </div>
+    </section>
+
+    <section id="kontak" class="card kontak">
+      <h2>Kontak</h2>
+      <p>Diskusi atau kolaborasi?</p>
+      <div class="sosmed">
+        <a href="angelcintavirginnia17@gmail.com">📧 Email</a>
+        <a href="https://www.instagram.com/anciviii?igsh=MWl6czAxcHYyZTFpcg==">📷 Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 — Angel Cinta Virginnia</p>
+  </footer>
+
+  <script>
+    // Smooth scroll halus
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

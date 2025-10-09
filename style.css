@@ -1,0 +1,165 @@
+/* Font modern */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* HEADER / HERO */
+.hero {
+  background: linear-gradient(135deg, #0078d7, #6bc1ff);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 0 0 50px 50px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #0078d7;
+  transform: scale(1.05);
+}
+
+/* CARD SECTION */
+.card {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #0078d7;
+  border-left: 5px solid #0078d7;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* GAMBAR */
+.foto-koding {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.foto-koding:hover {
+  transform: scale(1.02);
+}
+
+/* MATERI GRID */
+.materi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.materi-item {
+  background: #0078d7;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.materi-item:hover {
+  background: #005fa3;
+  transform: scale(1.05);
+}
+
+/* KONTAK */
+.kontak {
+  text-align: center;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sosmed a {
+  background: #0078d7;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sosmed a:hover {
+  background: #005fa3;
+  transform: scale(1.08);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: #555;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .materi-grid {
+    grid-template-columns: 1fr;
+  }
+}
